@@ -1,0 +1,63 @@
+C:\Users\Pablo\Desktop\NUEVO\SistemaAC\SistemaAC\obj\Debug\netcoreapp2.0\ACTI.AssemblyInfoInputs.cache
+C:\Users\Pablo\Desktop\NUEVO\SistemaAC\SistemaAC\obj\Debug\netcoreapp2.0\ACTI.AssemblyInfo.cs
+C:\Users\Pablo\Desktop\NUEVO\SistemaAC\SistemaAC\obj\Debug\netcoreapp2.0\ACTI.csproj.CoreCompileInputs.cache
+C:\Users\Pablo\Desktop\NUEVO\SistemaAC\SistemaAC\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+C:\Users\Pablo\Desktop\NUEVO\SPEF\SistemaAC\obj\Debug\netcoreapp2.0\ACTI.AssemblyInfoInputs.cache
+C:\Users\Pablo\Desktop\NUEVO\SPEF\SistemaAC\obj\Debug\netcoreapp2.0\ACTI.AssemblyInfo.cs
+C:\Users\Pablo\Desktop\NUEVO\SPEF\SistemaAC\obj\Debug\netcoreapp2.0\ACTI.csproj.CoreCompileInputs.cache
+C:\Users\Pablo\Desktop\NUEVO\SPEF\SistemaAC\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+C:\Users\Pablo\Desktop\NUEVO\SPEF\SistemaAC\bin\Debug\netcoreapp2.0\appsettings.Development.json
+C:\Users\Pablo\Desktop\NUEVO\SPEF\SistemaAC\bin\Debug\netcoreapp2.0\appsettings.json
+C:\Users\Pablo\Desktop\NUEVO\SPEF\SistemaAC\bin\Debug\netcoreapp2.0\bower.json
+C:\Users\Pablo\Desktop\NUEVO\SPEF\SistemaAC\bin\Debug\netcoreapp2.0\bundleconfig.json
+C:\Users\Pablo\Desktop\NUEVO\SPEF\SistemaAC\bin\Debug\netcoreapp2.0\Properties\launchSettings.json
+C:\Users\Pablo\Desktop\NUEVO\SPEF\SistemaAC\bin\Debug\netcoreapp2.0\Properties\serviceDependencies.json
+C:\Users\Pablo\Desktop\NUEVO\SPEF\SistemaAC\bin\Debug\netcoreapp2.0\Properties\serviceDependencies.local.json
+C:\Users\Pablo\Desktop\NUEVO\SPEF\SistemaAC\bin\Debug\netcoreapp2.0\ACTI.deps.json
+C:\Users\Pablo\Desktop\NUEVO\SPEF\SistemaAC\bin\Debug\netcoreapp2.0\ACTI.runtimeconfig.json
+C:\Users\Pablo\Desktop\NUEVO\SPEF\SistemaAC\bin\Debug\netcoreapp2.0\ACTI.runtimeconfig.dev.json
+C:\Users\Pablo\Desktop\NUEVO\SPEF\SistemaAC\bin\Debug\netcoreapp2.0\ACTI.dll
+C:\Users\Pablo\Desktop\NUEVO\SPEF\SistemaAC\bin\Debug\netcoreapp2.0\ACTI.pdb
+C:\Users\Pablo\Desktop\NUEVO\SPEF\SistemaAC\obj\Debug\netcoreapp2.0\ACTI.dll
+C:\Users\Pablo\Desktop\NUEVO\SPEF\SistemaAC\obj\Debug\netcoreapp2.0\ACTI.pdb
+C:\Users\Pablo\Desktop\NUEVO\SPEF\SistemaAC\obj\Debug\netcoreapp2.0\ACTI.genruntimeconfig.cache
+C:\Users\itzmegas\Desktop\New folder\SPEF\SistemaAC\bin\Debug\netcoreapp2.0\appsettings.Development.json
+C:\Users\itzmegas\Desktop\New folder\SPEF\SistemaAC\bin\Debug\netcoreapp2.0\appsettings.json
+C:\Users\itzmegas\Desktop\New folder\SPEF\SistemaAC\bin\Debug\netcoreapp2.0\Properties\launchSettings.json
+C:\Users\itzmegas\Desktop\New folder\SPEF\SistemaAC\bin\Debug\netcoreapp2.0\Properties\serviceDependencies.json
+C:\Users\itzmegas\Desktop\New folder\SPEF\SistemaAC\bin\Debug\netcoreapp2.0\Properties\serviceDependencies.local.json
+C:\Users\itzmegas\Desktop\New folder\SPEF\SistemaAC\bin\Debug\netcoreapp2.0\bower.json
+C:\Users\itzmegas\Desktop\New folder\SPEF\SistemaAC\bin\Debug\netcoreapp2.0\bundleconfig.json
+C:\Users\itzmegas\Desktop\New folder\SPEF\SistemaAC\bin\Debug\netcoreapp2.0\ACTI.deps.json
+C:\Users\itzmegas\Desktop\New folder\SPEF\SistemaAC\bin\Debug\netcoreapp2.0\ACTI.runtimeconfig.json
+C:\Users\itzmegas\Desktop\New folder\SPEF\SistemaAC\bin\Debug\netcoreapp2.0\ACTI.runtimeconfig.dev.json
+C:\Users\itzmegas\Desktop\New folder\SPEF\SistemaAC\bin\Debug\netcoreapp2.0\ACTI.dll
+C:\Users\itzmegas\Desktop\New folder\SPEF\SistemaAC\bin\Debug\netcoreapp2.0\ACTI.pdb
+C:\Users\itzmegas\Desktop\New folder\SPEF\SistemaAC\obj\Debug\netcoreapp2.0\ACTI.AssemblyInfoInputs.cache
+C:\Users\itzmegas\Desktop\New folder\SPEF\SistemaAC\obj\Debug\netcoreapp2.0\ACTI.AssemblyInfo.cs
+C:\Users\itzmegas\Desktop\New folder\SPEF\SistemaAC\obj\Debug\netcoreapp2.0\ACTI.csproj.CoreCompileInputs.cache
+C:\Users\itzmegas\Desktop\New folder\SPEF\SistemaAC\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+C:\Users\itzmegas\Desktop\New folder\SPEF\SistemaAC\obj\Debug\netcoreapp2.0\ACTI.dll
+C:\Users\itzmegas\Desktop\New folder\SPEF\SistemaAC\obj\Debug\netcoreapp2.0\ACTI.pdb
+C:\Users\itzmegas\Desktop\New folder\SPEF\SistemaAC\obj\Debug\netcoreapp2.0\ACTI.genruntimeconfig.cache
+C:\Users\itzmegas\Desktop\New folder\SPEF\SistemaAC\obj\Debug\netcoreapp2.0\ACTI.csprojAssemblyReference.cache
+C:\Users\Pablo\Desktop\SPEF-master\SistemaAC\obj\Debug\netcoreapp2.0\ACTI.AssemblyInfoInputs.cache
+C:\Users\Pablo\Desktop\SPEF-master\SistemaAC\obj\Debug\netcoreapp2.0\ACTI.AssemblyInfo.cs
+C:\Users\Pablo\Desktop\SPEF-master\SistemaAC\obj\Debug\netcoreapp2.0\ACTI.csproj.CoreCompileInputs.cache
+C:\Users\Pablo\Desktop\SPEF-master\SistemaAC\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+C:\Users\Pablo\Desktop\SPEF-master\SistemaAC\bin\Debug\netcoreapp2.0\appsettings.Development.json
+C:\Users\Pablo\Desktop\SPEF-master\SistemaAC\bin\Debug\netcoreapp2.0\appsettings.json
+C:\Users\Pablo\Desktop\SPEF-master\SistemaAC\bin\Debug\netcoreapp2.0\bower.json
+C:\Users\Pablo\Desktop\SPEF-master\SistemaAC\bin\Debug\netcoreapp2.0\bundleconfig.json
+C:\Users\Pablo\Desktop\SPEF-master\SistemaAC\bin\Debug\netcoreapp2.0\Properties\launchSettings.json
+C:\Users\Pablo\Desktop\SPEF-master\SistemaAC\bin\Debug\netcoreapp2.0\Properties\serviceDependencies.json
+C:\Users\Pablo\Desktop\SPEF-master\SistemaAC\bin\Debug\netcoreapp2.0\Properties\serviceDependencies.local.json
+C:\Users\Pablo\Desktop\SPEF-master\SistemaAC\bin\Debug\netcoreapp2.0\ACTI.deps.json
+C:\Users\Pablo\Desktop\SPEF-master\SistemaAC\bin\Debug\netcoreapp2.0\ACTI.runtimeconfig.json
+C:\Users\Pablo\Desktop\SPEF-master\SistemaAC\bin\Debug\netcoreapp2.0\ACTI.runtimeconfig.dev.json
+C:\Users\Pablo\Desktop\SPEF-master\SistemaAC\bin\Debug\netcoreapp2.0\ACTI.dll
+C:\Users\Pablo\Desktop\SPEF-master\SistemaAC\bin\Debug\netcoreapp2.0\ACTI.pdb
+C:\Users\Pablo\Desktop\SPEF-master\SistemaAC\obj\Debug\netcoreapp2.0\ACTI.dll
+C:\Users\Pablo\Desktop\SPEF-master\SistemaAC\obj\Debug\netcoreapp2.0\ACTI.pdb
+C:\Users\Pablo\Desktop\SPEF-master\SistemaAC\obj\Debug\netcoreapp2.0\ACTI.genruntimeconfig.cache
+C:\Users\Pablo\Desktop\SPEF-master\SistemaAC\obj\Debug\netcoreapp2.0\ACTI.csprojAssemblyReference.cache

@@ -1,0 +1,67 @@
+﻿@model ACTI.Models.Alumno
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>Eliminar</h2>
+
+<h5>¿Usted esta seguro que quiere eliminar el registro del alumno?</h5>
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Dni)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Dni)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Nombre)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Apellido)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Apellido)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Dirección)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Dirección)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Nacimiento)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Nacimiento)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Teléfono)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Teléfono)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Estado)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Estado)
+        </dd>
+    </dl>
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="Eliminar" class="btn btn-danger" /> |
+        <a asp-action="Index">Volver al listado</a>
+    </form>
+</div>
