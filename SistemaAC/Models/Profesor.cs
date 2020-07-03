@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ACTI.Models
 {
-    public class Profesor
+    public class Profesor: Entidad
     {
         public int Id { get; set; }
 

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ACTI.Models
 {
-    public class Alumno
+    public class Alumno: Entidad
     {
         public int Id { get; set; }
 

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Pablo\\Desktop\\SPEF-master\\SistemaAC\\ACTI.csproj": {}
+    "C:\\Users\\Pablo\\Desktop\\ProgramacioV_SPEF-master\\SistemaAC\\ACTI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Pablo\\Desktop\\SPEF-master\\SistemaAC\\ACTI.csproj": {
+    "C:\\Users\\Pablo\\Desktop\\ProgramacioV_SPEF-master\\SistemaAC\\ACTI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Pablo\\Desktop\\SPEF-master\\SistemaAC\\ACTI.csproj",
+        "projectUniqueName": "C:\\Users\\Pablo\\Desktop\\ProgramacioV_SPEF-master\\SistemaAC\\ACTI.csproj",
         "projectName": "ACTI",
-        "projectPath": "C:\\Users\\Pablo\\Desktop\\SPEF-master\\SistemaAC\\ACTI.csproj",
+        "projectPath": "C:\\Users\\Pablo\\Desktop\\ProgramacioV_SPEF-master\\SistemaAC\\ACTI.csproj",
         "packagesPath": "C:\\Users\\Pablo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Pablo\\Desktop\\SPEF-master\\SistemaAC\\obj\\",
+        "outputPath": "C:\\Users\\Pablo\\Desktop\\ProgramacioV_SPEF-master\\SistemaAC\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",

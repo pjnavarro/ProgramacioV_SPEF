@@ -10,7 +10,7 @@ using System;
 
 namespace ACTI.Data.Migrations
 {
-    [DbContext(typeof(ApplicationDbContext))]
+    [DbContext(typeof(ACTIContext))]
     partial class ApplicationDbContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
@@ -19,39 +19,6 @@ namespace ACTI.Data.Migrations
             modelBuilder
                 .HasAnnotation("ProductVersion", "2.0.3-rtm-10026")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-            modelBuilder.Entity("ACTI.Models.Alumno", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<string>("Apellido")
-                        .IsRequired();
-
-                    b.Property<string>("Dirección")
-                        .IsRequired();
-
-                    b.Property<int>("Dni");
-
-                    b.Property<string>("Email");
-
-                    b.Property<bool>("Estado");
-
-                    b.Property<DateTime>("Nacimiento");
-
-                    b.Property<string>("Nombre")
-                        .IsRequired();
-
-                    b.Property<int?>("ProfesorId");
-
-                    b.Property<int>("Teléfono");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("ProfesorId");
-
-                    b.ToTable("Alumno");
-                });
 
             modelBuilder.Entity("ACTI.Models.ApplicationUser", b =>
                 {
@@ -102,51 +69,6 @@ namespace ACTI.Data.Migrations
                         .HasFilter("[NormalizedUserName] IS NOT NULL");
 
                     b.ToTable("AspNetUsers");
-                });
-
-            modelBuilder.Entity("ACTI.Models.Categoria", b =>
-                {
-                    b.Property<int>("CategoriaID")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<string>("Descripcion");
-
-                    b.Property<bool>("Estado");
-
-                    b.Property<string>("Nombre");
-
-                    b.HasKey("CategoriaID");
-
-                    b.ToTable("Categoria");
-                });
-
-            modelBuilder.Entity("ACTI.Models.Profesor", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<string>("Apellido")
-                        .IsRequired();
-
-                    b.Property<string>("Dirección")
-                        .IsRequired();
-
-                    b.Property<int>("Dni");
-
-                    b.Property<string>("Email");
-
-                    b.Property<bool>("Estado");
-
-                    b.Property<DateTime>("Nacimiento");
-
-                    b.Property<string>("Nombre")
-                        .IsRequired();
-
-                    b.Property<int>("Teléfono");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Profesor");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
@@ -255,13 +177,6 @@ namespace ACTI.Data.Migrations
                     b.HasKey("UserId", "LoginProvider", "Name");
 
                     b.ToTable("AspNetUserTokens");
-                });
-
-            modelBuilder.Entity("ACTI.Models.Alumno", b =>
-                {
-                    b.HasOne("ACTI.Models.Profesor", "Profesor")
-                        .WithMany()
-                        .HasForeignKey("ProfesorId");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

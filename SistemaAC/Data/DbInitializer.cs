@@ -10,7 +10,7 @@ namespace ACTI.Data
 { 
         public class DbInitializer
         {
-            public static void Initialize(ApplicationDbContext context)
+            public static void Initialize(ACTIContext context)
             {
                 context.Database.EnsureCreated();
 

@@ -10,7 +10,7 @@ using System;
 
 namespace ACTI.Data.Migrations
 {
-    [DbContext(typeof(ApplicationDbContext))]
+    [DbContext(typeof(ACTIContext))]
     [Migration("20200630053719_INICIAL")]
     partial class INICIAL
     {

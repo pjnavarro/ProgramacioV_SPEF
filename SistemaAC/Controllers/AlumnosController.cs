@@ -13,7 +13,6 @@ namespace ACTI.Controllers
 {
     public class AlumnosController : Controller
     {
-
         private readonly ACTIContext _context;
 
         public AlumnosController(ACTIContext context)
@@ -23,8 +22,8 @@ namespace ACTI.Controllers
         [Authorize]
         // GET: Alumnos
         public async Task<IActionResult> Index(string sortOrder,
-                                        string currentFilter, string searchString,
-                                        int? page)
+                                       string currentFilter, string searchString,
+                                       int? page)
         {
             ViewData["NombreSortParm"] = String.IsNullOrEmpty(sortOrder) ? "nombre_desc" : "";
             ViewData["ApellidoSortParm"] = sortOrder == "apellido_asc" ? "apellido_desc" : "apellido_asc";
@@ -86,7 +85,7 @@ namespace ACTI.Controllers
 
             return View(alumno);
         }
-        [Authorize(Roles = "Administrador")]
+
         // GET: Alumnos/Create
         public IActionResult Create()
         {
@@ -98,7 +97,7 @@ namespace ACTI.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Dni,Nombre,Apellido,Dirección,Nacimiento,Email,Teléfono,Estado")] Alumno alumno)
+        public async Task<IActionResult> Create([Bind("Id,Dni,Nombre,Apellido,Dirección,Nacimiento,Email,Teléfono,Estado,UsuarioCreacion,Fecha Creacion,UsuarioModificacion,FechaModificacion")] Alumno alumno)
         {
             if (ModelState.IsValid)
             {
@@ -130,7 +129,7 @@ namespace ACTI.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Dni,Nombre,Apellido,Dirección,Nacimiento,Email,Teléfono,Estado")] Alumno alumno)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Dni,Nombre,Apellido,Dirección,Nacimiento,Email,Teléfono,Estado,UsuarioCreacion,FechaCreacion,UsuarioModificacion,FechaModificacion")] Alumno alumno)
         {
             if (id != alumno.Id)
             {
@@ -177,7 +176,6 @@ namespace ACTI.Controllers
 
             return View(alumno);
         }
-       
         [Authorize(Roles = "Administrador")]
         // POST: Alumnos/Delete/5
         [HttpPost, ActionName("Delete")]

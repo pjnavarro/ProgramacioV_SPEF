@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "o3Q1TwTrQQo65w2B8kiZE21lIdg8MxwxWeDIzuV49Awg7wiVqiWIu27LgVa0og5rlyJMiAxiPmBZPsHd21Ljrw==",
+  "dgSpecHash": "z8TPonnMoeuoDGXEDl7W+FTB3cSZATNczfrJ+pBF0DHNVVm9IZGZVBl8x1Vu62zVNjEFl25TEuhf8K07x9pACA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Pablo\\Desktop\\SPEF-master\\SistemaAC\\ACTI.csproj",
+  "projectFilePath": "C:\\Users\\Pablo\\Desktop\\ProgramacioV_SPEF-master\\SistemaAC\\ACTI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Pablo\\.nuget\\packages\\alanjuden.mvcreportviewer.netcore\\1.0.10\\alanjuden.mvcreportviewer.netcore.1.0.10.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\libuv\\1.10.0\\libuv.1.10.0.nupkg.sha512",

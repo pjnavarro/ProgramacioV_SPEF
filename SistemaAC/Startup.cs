@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Builder;
+﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Hosting;
@@ -11,6 +7,7 @@ using Microsoft.Extensions.DependencyInjection;
 using ACTI.Data;
 using ACTI.Models;
 using ACTI.Services;
+using ACTI.Helpers;
 
 namespace ACTI
 {
@@ -26,6 +23,8 @@ namespace ACTI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddTransient<IServicioUsuarioActual, ServicioUsuarioActual>();
+
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("SQL")));
 
@@ -39,11 +38,11 @@ namespace ACTI
             services.AddMvc();
 
             services.AddDbContext<ACTIContext>(options =>
-                    options.UseSqlServer(Configuration.GetConnectionString("SQL")));
+                     options.UseSqlServer(Configuration.GetConnectionString("SQL")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ApplicationDbContext context)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ACTIContext context)
         {
             if (env.IsDevelopment())
             {

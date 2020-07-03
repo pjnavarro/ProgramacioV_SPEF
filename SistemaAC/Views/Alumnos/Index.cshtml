@@ -4,10 +4,10 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>ALUMNOS</h1>
+<h2>Alumnos</h2>
 
 <p>
-    <a asp-action="Create"><Button class="btn btn-primary">Nuevo</Button></a>
+    <a asp-action="Create"><button class="btn btn-primary">Nuevo</button></a>
 </p>
 <form asp-action="Index" method="get">
     <div class="form-actions no-color">
@@ -22,7 +22,7 @@
     <thead>
         <tr>
             <th>
-                Dni
+                DNI
             </th>
             <th>
                 <a asp-action="Index" asp-route-sortOrder="@ViewData["NombreSortParm"]" asp-route-currentFilter="@ViewData["CurrentFilter"]">Nombre</a>
@@ -44,6 +44,18 @@
             </th>
             <th>
                 Estado
+            </th>
+            <th>
+                Creado por el usuario
+            </th>
+            <th>
+                Fecha de creación
+            </th>
+            <th>
+                Modificado por el usuario
+            </th>
+            <th>
+                Fecha de modificación
             </th>
             <th></th>
         </tr>
@@ -77,19 +89,28 @@
                     @Html.DisplayFor(modelItem => item.Estado)
                 </td>
                 <td>
-                    <a asp-action="Edit" asp-route-id="@item.Id">Editar</a> |
-                    <a asp-action="Details" asp-route-id="@item.Id">Detalle</a> |
+                    @Html.DisplayFor(modelItem => item.UsuarioCreacion)  
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FechaCreacion)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.UsuarioModificacion)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FechaModificacion)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id">Editar</a>
+                    <a asp-action="Details" asp-route-id="@item.Id">Detalles</a>
                     <a asp-action="Delete" asp-route-id="@item.Id">Eliminar</a>
                 </td>
             </tr>
         }
     </tbody>
 </table>
-@{
-    var prevDisabled = !Model.HasPreviousPage ? "disabled" : "";
-    var nextDisabled = !Model.HasNextPage ? "disabled" : "";
-    
-}
+@{ var prevDisabled = !Model.HasPreviousPage ? "disabled" : "";
+                var nextDisabled = !Model.HasNextPage ? "disabled" : ""; }
 <a asp-action="Index"
    asp-route-sortOrder="@ViewData["CurrentSort"]"
    asp-route-page="@(Model.PageIndex - 1)"
@@ -99,14 +120,13 @@
 </a>
 @for (int i = 1; i <= Model.TotalPages; i++)
 {
-    <a asp-action="Index"
-       asp-route-sortOrder="@ViewData["CurrentSort"]"
-       asp-route-page="@i"
-       asp-route-currentFilter="@ViewData["CurrentFilter"]"
-       class="btn btn-dark">
-        @i
-    </a>
-}
+<a asp-action="Index"
+   asp-route-sortOrder="@ViewData["CurrentSort"]"
+   asp-route-page="@i"
+   asp-route-currentFilter="@ViewData["CurrentFilter"]"
+   class="btn btn-dark">
+    @i
+</a>}
 <a asp-action="Index"
    asp-route-sortOrder="@ViewData["CurrentSort"]"
    asp-route-page="@(Model.PageIndex + 1)"

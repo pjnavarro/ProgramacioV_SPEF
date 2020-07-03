@@ -11,12 +11,10 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace ACTI.Controllers
 {
-    
     public class ProfesoresController : Controller
     {
-       
         private readonly ACTIContext _context;
-       
+
         public ProfesoresController(ACTIContext context)
         {
             _context = context;
@@ -24,8 +22,8 @@ namespace ACTI.Controllers
         [Authorize]
         // GET: Profesores
         public async Task<IActionResult> Index(string sortOrder,
-                                        string currentFilter, string searchString,
-                                        int? page)
+                                       string currentFilter, string searchString,
+                                       int? page)
         {
             ViewData["NombreSortParm"] = String.IsNullOrEmpty(sortOrder) ? "nombre_desc" : "";
             ViewData["ApellidoSortParm"] = sortOrder == "apellido_asc" ? "apellido_desc" : "apellido_asc";
@@ -69,7 +67,7 @@ namespace ACTI.Controllers
             return View(await Paginacion<Profesor>.CreateAsync(profesores.AsNoTracking(), page ?? 1, pageSize));
             // return View(await _context.Profesor.ToListAsync());
         }
-       
+
         // GET: Profesores/Details/5
         public async Task<IActionResult> Details(int? id)
         {
@@ -87,20 +85,21 @@ namespace ACTI.Controllers
 
             return View(profesor);
         }
+
         [Authorize(Roles = "Administrador")]
-       
         // GET: Profesores/Create
+
         public IActionResult Create()
         {
             return View();
         }
-        [Authorize(Roles = "Administrador")]
+
         // POST: Profesores/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Dni,Nombre,Apellido,Dirección,Nacimiento,Email,Teléfono,Estado")] Profesor profesor)
+        public async Task<IActionResult> Create([Bind("Id,Dni,Nombre,Apellido,Dirección,Nacimiento,Email,Teléfono,Estado,UsuarioCreacion,FechaCreacion,UsuarioModificacion,FechaModificacion")] Profesor profesor)
         {
             if (ModelState.IsValid)
             {
@@ -111,7 +110,6 @@ namespace ACTI.Controllers
             return View(profesor);
         }
         [Authorize(Roles = "Administrador")]
-       
         // GET: Profesores/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
@@ -133,7 +131,7 @@ namespace ACTI.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Dni,Nombre,Apellido,Dirección,Nacimiento,Email,Teléfono,Estado")] Profesor profesor)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Dni,Nombre,Apellido,Dirección,Nacimiento,Email,Teléfono,Estado,UsuarioCreacion,FechaCreacion,UsuarioModificacion,FechaModificacion")] Profesor profesor)
         {
             if (id != profesor.Id)
             {
@@ -182,11 +180,10 @@ namespace ACTI.Controllers
         }
         [Authorize(Roles = "Administrador")]
         // POST: Profesores/Delete/5
-        [HttpPost, ActionName("Delete")]     
+        [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            
             var profesor = await _context.Profesor.SingleOrDefaultAsync(m => m.Id == id);
             _context.Profesor.Remove(profesor);
             await _context.SaveChangesAsync();
