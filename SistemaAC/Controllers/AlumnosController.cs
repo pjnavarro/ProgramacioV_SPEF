@@ -67,7 +67,7 @@ namespace ACTI.Controllers
             return View(await Paginacion<Alumno>.CreateAsync(alumnos.AsNoTracking(), page ?? 1, pageSize));
             // return View(await _context.Alumno.ToListAsync());
         }
-
+      
         // GET: Alumnos/Details/5
         public async Task<IActionResult> Details(int? id)
         {
@@ -85,7 +85,7 @@ namespace ACTI.Controllers
 
             return View(alumno);
         }
-
+        [Authorize(Roles = "Administrador")]
         // GET: Alumnos/Create
         public IActionResult Create()
         {

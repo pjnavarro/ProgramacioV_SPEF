@@ -100,3 +100,4 @@ C:\Users\Pablo\Desktop\SPEF\ProgramacioV_SPEF-master\SistemaAC\obj\Debug\netcore
 C:\Users\Pablo\Desktop\SPEF\ProgramacioV_SPEF-master\SistemaAC\obj\Debug\netcoreapp2.0\ACTI.dll
 C:\Users\Pablo\Desktop\SPEF\ProgramacioV_SPEF-master\SistemaAC\obj\Debug\netcoreapp2.0\ACTI.pdb
 C:\Users\Pablo\Desktop\SPEF\ProgramacioV_SPEF-master\SistemaAC\obj\Debug\netcoreapp2.0\ACTI.genruntimeconfig.cache
+C:\Users\Pablo\Desktop\SPEF\ProgramacioV_SPEF-master\SistemaAC\obj\Debug\netcoreapp2.0\ACTI.csprojAssemblyReference.cache
